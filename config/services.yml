@@ -1,0 +1,8 @@
+services:
+    dmzx.switches.listener:
+        class: dmzx\switches\event\listener
+        arguments:
+            - @template
+            - @config
+        tags:
+            - { name: event.listener }

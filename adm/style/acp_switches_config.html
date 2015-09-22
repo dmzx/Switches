@@ -1,0 +1,73 @@
+<!-- INCLUDE overall_header.html -->
+	<h1>{L_ACP_SWITCHES}</h1>
+
+	<p>{L_ACP_SWITCHES_VERSION}{L_COLON} {ACP_SWITCHES_VERSION} {L_ACP_SWITCHES_CREDITS}</p>
+
+	<form id="acp_switches_config" method="post" action="{U_ACTION}">
+
+	<fieldset>
+	<legend>{L_ACP_SWITCHES_CONFIG_SET}</legend>
+	<dl>
+		<dt><label for="switches_enable">{L_ACP_SWITCHES_ENABLE}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_ENABLE_EXPLAIN}</span></dt>
+		<dd><label><input type="radio" class="radio" name="switches_enable" value="1"<!-- IF ACP_SWITCHES_ENABLE --> id="switches_enable" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+		<label><input type="radio" class="radio" name="switches_enable" value="0"<!-- IF not ACP_SWITCHES_ENABLE --> id="switches_enable" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+	</dl>
+	<dl>
+		<dt><label for="switches_enable_first">{L_ACP_SWITCHES_ENABLE_FIRST}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_ENABLE_FIRST_EXPLAIN}</span></dt>
+		<dd><label><input type="radio" class="radio" name="switches_enable_first" value="1"<!-- IF ACP_SWITCHES_ENABLE_FIRST --> id="switches_enable_first" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+		<label><input type="radio" class="radio" name="switches_enable_first" value="0"<!-- IF not ACP_SWITCHES_ENABLE_FIRST --> id="switches_enable_first" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+	</dl>
+	<dl>
+		<dt><label for="switches_enable_second">{L_ACP_SWITCHES_ENABLE_SECOND}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_ENABLE_SECOND_EXPLAIN}</span></dt>
+		<dd><label><input type="radio" class="radio" name="switches_enable_second" value="1"<!-- IF ACP_SWITCHES_ENABLE_SECOND --> id="switches_enable_second" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+		<label><input type="radio" class="radio" name="switches_enable_second" value="0"<!-- IF not ACP_SWITCHES_ENABLE_SECOND --> id="switches_enable_second" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+	</dl>
+	<dl>
+		<dt><label for="switches_enable_third">{L_ACP_SWITCHES_ENABLE_THIRD}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_ENABLE_THIRD_EXPLAIN}</span></dt>
+		<dd><label><input type="radio" class="radio" name="switches_enable_third" value="1"<!-- IF ACP_SWITCHES_ENABLE_THIRD --> id="switches_enable_third" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+		<label><input type="radio" class="radio" name="switches_enable_third" value="0"<!-- IF not ACP_SWITCHES_ENABLE_THIRD --> id="switches_enable_third" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+	</dl>
+	<dl>
+		<dt><label for="switches_name_field_first">{L_ACP_SWITCHES_NAME_FIELD_FIRST}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_NAME_FIELD_FIRST_EXPLAIN}</span></dt>
+		<dd><input name="switches_name_field_first" type="text" id="switches_name_field_first" class="text medium" value="{SWITCHES_NAME_FIELD_FIRST}"	maxlength="255" /></dd>
+	 </dl>
+	<dl>
+		<dt><label for="switches_text_field_first">{L_ACP_SWITCHES_TEXT_FIELD_FIRST}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_TEXT_FIELD_FIRST_EXPLAIN}</span></dt>
+		<dd><input name="switches_text_field_first" type="text" id="switches_text_field_first" class="text medium" value="{SWITCHES_TEXT_FIELD_FIRST}"	maxlength="255" /></dd>
+	 </dl>
+	<dl>
+		<dt><label for="switches_name_field_second">{L_ACP_SWITCHES_NAME_FIELD_SECOND}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_NAME_FIELD_SECOND_EXPLAIN}</span></dt>
+		<dd><input name="switches_name_field_second" type="text" id="switches_name_field_second" class="text medium" value="{SWITCHES_NAME_FIELD_SECOND}"	maxlength="255" /></dd>
+	 </dl>
+	<dl>
+		<dt><label for="switches_text_field_second">{L_ACP_SWITCHES_TEXT_FIELD_SECOND}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_TEXT_FIELD_SECOND_EXPLAIN}</span></dt>
+		<dd><input name="switches_text_field_second" type="text" id="switches_text_field_second" class="text medium" value="{SWITCHES_TEXT_FIELD_SECOND}"	maxlength="255" /></dd>
+	 </dl>
+	 <dl>
+		<dt><label for="switches_name_field_third">{L_ACP_SWITCHES_NAME_FIELD_THIRD}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_NAME_FIELD_THIRD_EXPLAIN}</span></dt>
+		<dd><input name="switches_name_field_third" type="text" id="switches_name_field_third" class="text medium" value="{SWITCHES_NAME_FIELD_THIRD}"	maxlength="255" /></dd>
+	 </dl>
+	 <dl>
+		<dt><label for="switches_text_field_third">{L_ACP_SWITCHES_TEXT_FIELD_THIRD}{L_COLON}</label><br />
+		<span>{L_ACP_SWITCHES_TEXT_FIELD_THIRD_EXPLAIN}</span></dt>
+		<dd><input name="switches_text_field_third" type="text" id="switches_text_field_third" class="text medium" value="{SWITCHES_TEXT_FIELD_THIRD}"	maxlength="255" /></dd>
+	 </dl>
+	<p class="submit-buttons">
+		<input type="hidden" name="action" value="save" />
+
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		{S_FORM_TOKEN}
+	</p>
+	</fieldset>
+	</form>
+<!-- INCLUDE overall_footer.html -->
