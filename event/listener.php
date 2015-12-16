@@ -13,10 +13,19 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
+	/** @var \phpbb\template\template */
 	protected $template;
-	
+
+	/** @var \phpbb\config\config */
 	protected $config;
 
+	/**
+	* Constructor
+	*
+	* @param \phpbb\template\template			$template
+	* @param \phpbb\config\config				$config
+	*
+	*/
 	public function __construct(\phpbb\template\template $template, \phpbb\config\config $config)
 	{
 		$this->template = $template;

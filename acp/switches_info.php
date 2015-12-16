@@ -10,7 +10,7 @@
 namespace dmzx\switches\acp;
 
 class switches_info
- {
+{
 	function module()
 	{
 		 return array(
