@@ -1,5 +1,7 @@
 # phpBB Switches Extension
 
+[![Build Status](https://travis-ci.org/dmzx/Switches.svg?branch=master)](https://travis-ci.org/dmzx/Switches)
+
 ## Install
 
 1. Download the latest release and Unzip the downloaded release.
