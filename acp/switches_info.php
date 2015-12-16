@@ -13,7 +13,7 @@ class switches_info
 {
 	function module()
 	{
-		 return array(
+		return array(
 			'filename'	=> '\dmzx\switches\acp\pmregbar_module',
 			'title'		=> 'ACP_SWITCHES',
 			'modes'		=> array(
